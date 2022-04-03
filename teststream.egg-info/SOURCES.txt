@@ -1,0 +1,6 @@
+setup.py
+teststream.egg-info/PKG-INFO
+teststream.egg-info/SOURCES.txt
+teststream.egg-info/dependency_links.txt
+teststream.egg-info/not-zip-safe
+teststream.egg-info/top_level.txt
