@@ -22,7 +22,8 @@ X,Y = np.meshgrid( np.linspace( 200, 500, 50), np.linspace( 40, 200, 50) )
 Ap = st.slider('Ap',0.0,2.0,1.15,0.1)
 Z=dicp["inter"]+dicp["Vc"]*X+dicp["Ap"]*Ap+dicp["feed"]*Y+dicp["Vcfeed"]*X*Y+dicp["VcAp"]*X*Ap+dicp["Apfeed"]*Y*Ap+dicp["VcVc"]*X*X+dicp["feedfeed"]*Y*Y+dicp["ApAp"]*Ap*Ap
 
-fig, ax = plt.subplot(111, projection='3d')
+fig, ax = plt.subplots()
+ax = plt.subplot(111, projection='3d')
 ax.view_init(15, 40)
 #surf = ax.plot_surface( X, Y, Zm,cmap=cm.coolwarm,
 #linewidth=0, antialiased=False)
